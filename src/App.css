@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: aliceblue; /*temp*/
+}
+
+.App{
+    background-color: black;
+}
+
+.video{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+
+ @media (min-aspect-ratio: 16/9){
+    .video{
+        width:100%;
+        height:auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .video{
+        width:auto;
+        height:100%;
+    }
+} 
+
+/*  gap div class*/
+
+.gap{
+    width: 100%;
+    height: 100px;
+}
+
+/* 1st gap*/
+.linearclass{
+    background-image: linear-gradient(rgba(247, 232, 156, 0.835), rgb(255, 255, 255));
+}

@@ -1,10 +1,21 @@
-// import logo from './logo.svg';
-// import './App.css';
+
+import Contact from "./container/Contact";
+import About from "./container/About";
+import Home from "./container/Home";
+import "./App.css";
+import Navbar from "./container/Navbar";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <h1>hi</h1>
+      <Navbar />
+
+      <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }

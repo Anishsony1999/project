@@ -1,0 +1,36 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+    background:transparent;
+}
+
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header ul li{
+    list-style:none ;
+    margin-left: 20px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    padding: 6px 19px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.header ul li a:hover{
+    background:#fff ;
+    color: #2b1055;
+}
